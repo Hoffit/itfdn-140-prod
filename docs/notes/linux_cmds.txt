@@ -1,0 +1,13 @@
+who                     who is logged in
+echo "foo"              outputs to stdout
+cat /etc/passwd         prints contents of file to stdout
+ls -al                  lists files and dirs w/details, including hidden
+wc -l /etc/passwd       count of words in passwd file
+cp afile anotherfile    copies a file to another file
+mv afile anotherfile    moves, and deletes original
+rm unwantedfile         deletes a file or directory (-d)
+cd child_dir            changes to specified directory
+pwd                     prints current (working) directory
+mkdir a_new_dir         creates a new directory
+rmdir bad_dir           deletes a directory
+

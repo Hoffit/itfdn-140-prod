@@ -1,0 +1,3 @@
+grep afile linux_cmds.txt	looks for lines containing 'afile'. In this case, it found two.
+sort linux_cmds.txt		sorts the file aplha-numerically, reports to std-out.
+uniq -uc linux_cmds.txt		Finds unique lines, and prefixes with a count of occurances...hahaha. Funny combo of options.
