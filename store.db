@@ -1,3 +1,7 @@
 man
 cp
-
+mv
+chmod 755 <a file>
+cat <a file>
+ps -axZ (provides list of processes with the SELinux layer)
+ls -dZ /usr/share/nginx/html/* (list of files and there SELinux permissions)

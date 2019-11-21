@@ -7,9 +7,13 @@
 
 # variables
 store_data="$HOME/scripts/shell/store.db"
-if [ "$#" -eq 0 ] ; then
- more $store_data
+if [ "$1" = "-h" ]
+   then
+	echo "Help for recall"
+elif [ "$#" -eq 0 ] ;
+   then
+	more $store_data
 else
- # note ${PAGER:-more} allows default pager to be used unless nothing set then more used.
- grep -i "$@" $store_data | ${PAGER:-more}
+   # note ${PAGER:-more} allows default pager to be used unless nothing set then more used.
+   grep -i "$@" $store_data | ${PAGER:-more}
 fi

@@ -9,10 +9,14 @@
 store_data="$HOME/scripts/shell/store.db"
 
 # start logic here
-if [ "$#" -eq 0 ]; then
-   echo "Enter note then quit using Ctrl+D"
-   # note - following cat indicates input from keyboard, also this can be blank also.
-   cat - >> $store_data
+if [ "$1" = "-h" ];
+   then
+	echo "Stores commands for later"
+elif [ "$#" -eq 0 ];
+   then
+   	echo "Enter note then quit using Ctrl+D"
+   	# note - following cat indicates input from keyboard, also this can be blank also.
+   	cat - >> $store_data
 else
    echo "$@ >> $store_data"
 fi
